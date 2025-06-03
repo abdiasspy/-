@@ -1,63 +1,37 @@
-// config.js
+# 🤖 IVORYX MD - WhatsApp Bot
 
-module.exports = {
-  // Informations de base
-  botName: 'IVORYX MD',
-  ownerName: 'abdias dev / denki dev',
-  ownerNumber: ['2250715370638'], // Numéros autorisés (sans le "+")
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Statut](https://img.shields.io/badge/status-en%20développement-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-  // Messages par défaut
-  messages: {
-    success: '✅ Terminé !',
-    admin: '❌ Cette commande est réservée aux admins.',
-    botAdmin: '❌ Le bot doit être admin pour faire ça.',
-    owner: '❌ Cette commande est réservée au propriétaire.',
-    group: '❌ Utilisable uniquement dans un groupe.',
-    private: '❌ Utilisable uniquement en message privé.',
-    bot: '❌ Cette fonction est réservée au bot.',
-    wait: '⏳ En cours, patiente un peu...',
-    error: '❌ Une erreur est survenue.',
-    endLimit: '🚫 Tu as atteint ta limite quotidienne.',
-  },
+**IVORYX MD** est un bot WhatsApp moderne, rapide et puissant, basé sur la bibliothèque [Baileys Multi-Device](https://github.com/WhiskeySockets/Baileys). Il propose de nombreuses fonctionnalités automatisées pour animer des groupes, répondre à des commandes, utiliser l'IA, faire des jeux et bien plus encore.
 
-  // Limites par utilisateur
-  limitInitial: {
-    premium: "Infini",
-    gratuit: 20
-  },
+---
 
-  // Messages d'accueil / départ
-  welcomeMessage: '👋 Bienvenue, @user !',
-  goodbyeMessage: '😢 Au revoir, @user !',
+## 🛠️ Fonctionnalités principales
 
-  // Auto-lecture de messages
-  autoRead: true,
+- 🎭 **Stickers** : Création rapide de stickers à partir d’images ou vidéos
+- 📥 **Téléchargements** : YouTube, TikTok, Instagram, Facebook
+- 🧠 **Intelligence artificielle** : Intégration possible avec ChatGPT (via clé API)
+- 🧹 **Modération** : Anti-lien, anti-fake, anti-spam, bienvenue/au revoir automatiques
+- 🎮 **Jeux** : Devine le mot, pierre-papier-ciseaux, quiz, etc.
+- 🔧 **Commandes admin** : Bannir, ajouter, mute, clear, etc.
+- 📂 **Utilitaires** : OCR, lecture QR code, conversion fichiers, etc.
 
-  // Anti-lien, anti-fake, etc.
-  antiLink: false,
-  antiFake: false,
-  antiSpam: true,
+---
 
-  // Préfixes valides pour appeler les commandes
-  prefixes: ['!', '.', '/', '#'],
+## 🚀 Installation
 
-  // Message personnalisé du menu
-  menuMessage: `
-🤖 *IVORYX MD - MENU PRINCIPAL*
-╭─────────────◆
-│👑 Propriétaire : Abdias dev and denki dev
-│📱 Numéro : wa.me/2250715370638
-│📆 Date : %date
-╰─────────────◆
+### Prérequis
 
-🔍 Tape une commande pour commencer !
-`,
+- Node.js version 16 ou supérieure
+- Git
+- Téléphone avec WhatsApp (scanne un QR Code)
 
-  // Clé API (si utilisée)
-  openaiKey: process.env.OPENAI_KEY || '',
+### Étapes
 
-  // Configuration avancée
-  sessionName: 'session',
-  language: 'fr', // ou 'en'
-}
-
+```bash
+git clone https://github.com/votre-utilisateur/ivoryx-md.git
+cd ivoryx-md
+npm install
+npm start
